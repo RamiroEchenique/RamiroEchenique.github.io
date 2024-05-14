@@ -12,13 +12,15 @@ h1,
 h2,
 h3 {
     font-family: "fuentetitulo", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
 }
 
 body {
     background-color: lightpink;
-    margin: 10;
+    margin: 50;
     padding: 20;
-    background-image: url("imagenes/dayra-logo.png");
+    background-image: url("imagenes/REAL.png");
     font-family: "fuentecuerpo", Arial, Helvetica, sans-serif;
     background-size: 40vw;
     background-repeat: no-repeat;
