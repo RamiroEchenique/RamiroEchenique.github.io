@@ -1,25 +1,54 @@
-
 @font-face {
     font-family: 'fuentetitulo';
     src: url('fuentes/AmaticSC-Regular.ttf') format('truetype');
 }
-title {
-    font-family:'fuentetitulo';
-    ;
+
+@font-face {
+    font-family: 'fuentecuerpo';
+    src: url('fuentes/static/Lora-Regular.ttf') format('truetype');
+}
+
+h1,
+h2,
+h3 {
+    font-family: "fuentetitulo", Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: rgb(82, 123, 186);
+    background-color: lightpink;
+    margin: 10;
+    padding: 20;
+    background-image: url("imagenes/dayra-logo.png");
+    font-family: "fuentecuerpo", Arial, Helvetica, sans-serif;
+    background-size: 40vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1;
+
 }
 
-header{
+.segundo-fondo {
+
+    top: 0;
+    right: 0;
+    width: 85%;
+    height: 90%;
+    background-color: wheat;
+    
+    
+}
+
+
+
+header {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 15px 0;
 }
 
-header h1{
+header h1 {
     margin: 0;
 }
 
