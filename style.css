@@ -12,12 +12,19 @@ h1,
 h2 {
     font-family: "fuentetitulo", Arial, Helvetica, sans-serif;
        text-align: center;
+
 }
 h3{
     font-family: "fuentecuerpo";
     font-size: 15px;
     margin-left: 65px;
     text-align: center;
+    padding: 10px;
+}
+.registro:hover{
+   
+        color: #D38EB0 ;
+    
 }
 
 body {
@@ -42,16 +49,17 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    font-size: 50px;
+    font-size: 35px;
    
 }
 
 .logo img {
   
-    height: 50px;
+    height: 80px;
     margin-right: 10px;
 
 }
+
 a {
     text-decoration: none;
     color: black;
