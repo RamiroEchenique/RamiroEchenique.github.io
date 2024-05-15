@@ -84,4 +84,63 @@ nav a:hover{
     }
 } /*- Hacer que se ajuste al tamaño de la pantalla
 
+/* estilo para el carrousel*/
+/**{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}*/
+
+img{
+    width:auto;
+    height:80%;
+    margin:auto;
+    border-radius: 5%;
+}
+
+.contenedor{
+    width: 100%;
+    position: relative;
+    height: 500px; /*altura del contenedor*/
+    display: flex; /*centrar horizontalmente */
+    justify-content: center; /* para centrar horizontalmente*/
+    align-items: center; /*para centrar verticalmente*/
+}
+
+.botones{
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0, .7);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color:#fff;
+    box-shadow: 0 0 10px rgba(255,255,255, .6);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.botones:hover{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+}
+
+.atras{
+    left: 2%;
+    top:calc(50% - 70px)
+}
+
+.adelante {
+    right: 2%;
+    top:calc(50% - 10%)
+}
 
