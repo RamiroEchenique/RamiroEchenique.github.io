@@ -33,7 +33,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    height: 70px;
+    min-height: 70px;
     background-color: #FFDDD9;
     align-items: center;
     padding: 10px;
@@ -61,6 +61,7 @@ nav a{
     font-weight: 800;
     padding-right: 12px;
     font-size: 35px;
+    
 }
 nav a:hover{
     color: #D38EB0 ;
@@ -73,5 +74,6 @@ nav a:hover{
     nav {
         padding: 10px 0px;
     }
-}
+} /*- Hacer que se ajuste al tamaño de la pantalla
+
 
