@@ -1,4 +1,5 @@
-var imagenes = ['imagenes/imag1.jpeg','imagenes/imag2.jpeg','imagenes/imag3.jpeg','imagenes/imag4.jpeg'],
+var imagenes = ["imagenes/collar1.jpg",'imagenes/collar-luna.png','imagenes/aros-flores.png'
+,'imagenes/collar-oso.png',"imagenes/aros-collar-cerezas.png"],
     cont = 0;
 
 function carrousel (contenedor){
