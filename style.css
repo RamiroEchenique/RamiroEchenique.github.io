@@ -207,7 +207,7 @@ img {
     display: flex;
     border-radius: 3px;
     align-items: center;
-    transition: max-height 05s;
+    transition: max-height 0.5s;
     overflow: hidden;
 }
 
