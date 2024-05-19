@@ -21,16 +21,17 @@ h3 {
     margin-left: 45px;
     text-align: center;
     padding: 0px;
-    
+
 }
 
-.registro{
+.registro {
     margin-right: 35px;
-   }
+}
+
 .registro:hover a {
 
     color: #D38EB0;
-    
+
 
 }
 
@@ -38,10 +39,9 @@ body {
     background-color: #D38EB0;
     margin: 90;
     font-family: "fuentecuerpo", Arial, Helvetica, sans-serif;
-
+    box-sizing: border-box;
 
 }
-
 
 header {
     display: flex;
@@ -158,3 +158,115 @@ img {
     right: 2%;
     top: calc(50% - 10%)
 }
+
+/* Estilo para el Formulario*/
+.containerF {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+
+}
+
+.form-content {
+    width: 100%;
+    max-width: 450px;
+    background-color: #ffddd9c9;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 30px;
+
+}
+
+.form-content h1 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    position: relative;
+    color: black;
+}
+
+/* Crear un elemento*/
+
+.form-content h1::after {
+    content: " ";
+    width: 100%;
+    height: 4px;
+    border-radius: 3px;
+    background-color: rgb(100, 38, 141);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-field {
+
+    margin: 15px 0px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 3px;
+    align-items: center;
+    transition: max-height 05s;
+    overflow: hidden;
+}
+
+input {
+    width: 50%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 10px 15px;
+    color: black;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.input-field i {
+    margin-left: 12px;
+    color: rgb(52, 21, 102);
+}
+
+form p {
+    font-size: 13px;
+    text-align: left;
+    color: black;
+}
+
+form p a {
+    color: rgb(52, 21, 102);
+    margin-left: 4px;
+    font-weight: 550;
+    font-family: "fuentecuerpo";
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button {
+    flex-basis: 48%;
+    font-size: 16px;
+    background-color: rgba(44, 20, 82, 0.904);
+    color: #FFDDD9;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group {
+    height: 200px;
+}
+
+.btn-field button.disable {
+background-color: #bb809d;
+color: rgba(82, 80, 80, 0.74);
+}
+

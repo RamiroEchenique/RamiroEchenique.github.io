@@ -14,7 +14,7 @@ function carrousel (contenedor){
                 img.src=imagenes[cont-1];
                 cont--;
             }else{
-                img.src = imagenes[imagenes.length-1]; /* es para que sea circular y coloca la ultima imagen*/ 
+                img.src = imagenes[imagenes.length-1];  
                 cont = imagenes.length-1;
             }
        }else if(tgt == adelante){
@@ -22,7 +22,7 @@ function carrousel (contenedor){
                 img.src=imagenes[cont+1];
                 cont++;
             }else{
-                img.src = imagenes[0]; /* vuelve a la posicion cero*/ 
+                img.src = imagenes[0];
                 cont = 0;
             }
        }     
