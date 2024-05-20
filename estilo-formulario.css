@@ -99,8 +99,8 @@ form {
     font-family: "fuentecuerpo";
     max-width: 400px;
     margin: 0 auto;
-    padding: 12px;
-    background-color: #f7f7f7;
+    padding: 25px;
+    background-color: #FFDDD9;
     /*border: 2px solid #0f0;*/
     border-radius: 5px;
     display: flex;
@@ -114,7 +114,7 @@ input[type="email"],
 input[type="number"] {
     width: 100%;
     padding: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     /* border: 1px solid #ccc; */
     /*border-bottom: 1px solid #ccc;*/
     /*border-radius: 5px;*/
