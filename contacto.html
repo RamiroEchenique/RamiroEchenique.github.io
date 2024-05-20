@@ -99,6 +99,17 @@
                 errorAreaTexto.innerHTML = 'El mensaje no puede estar vacío';
                 return false;
             }
+
+            if(tel && nombre && apellido && mail && telefono){
+                alert(`${nombre}, nos comunicaremos contigo a la brevedad`)
+            }
+            //Limpieza de campos y errores
+            document.getElementById('formulario').reset();
+            errorNombre.innerHTML = '';
+            errorApellido.innerHTML = '';
+            errorEmail.innerHTML='';
+            errorTel.innerHTML='';
+
             
         return false;
         }
