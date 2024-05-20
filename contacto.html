@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Dayra </title>
     <link rel="icon" href="imagenes/logo-pestaña.png" sizes="16z16" type="image/png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo-formulario.css">
 
 
 </head>
 
 <body>
-
 
     <div class="segundo-fondo"></div>
     <div class="contenido"></div>
@@ -33,7 +32,62 @@
         </div>
         <h1 class="registro"><a href="registro.html"> Registrarse </a></h1>
     </header>
-    <h1>Contacto</h1>
+    <h1>Contáctanos</h1>
+
+    <form id="formulario" onsubmit="return validar()">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+        <div id="errorNombre" style="color: red;"></div>
+
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido">
+        <div id="errorApellido" style="color: red;"></div>
+
+        <label for="mail">Email</label>
+        <input type="email" id="mail" name="mail">
+        <div id="errorEmail" style="color: red;"></div>
+
+        <label for="tel">Telefono</label>
+        <input type="number" id="tel" name="tel">
+        <div id="erroTel" style="color: red;"></div>
+
+        <label for="mensaje">Escribe un mensaje</label>
+        <textarea id="textarea" name="mensaje" name="mensaje" rows="5"></textarea>
+        <div id="errorNombre" style="color: red;"></div>
+
+        <input type="submit" value="enviar">
+    </form>
+
+    <script>
+        const regTel =/^[1-9][0-9]{9}$/; 
+
+        function validar(){
+            let nombre = document.getElementById('nombre').value;
+            let apellido = document.getElementById('apellido').value;
+            let mail = document.getElementById('mail').value;
+            let telefono = document.getElementById('tel').value; /*Obtiene el valor actual del elemento del DOM con el id ‘tel’, que es un campo de entrada (input). La propiedad .value da el contenido que el usuario ha ingresado en ese campo*/
+            const errorElement = document.getElementById('errorMensaje'); /*obtiene el elemento del DOM con el id ‘errorMensaje’, pero no su valor. errorElement se refiere al elemento en sí, no a su contenido*/
+
+            if(nombre.length > 3){ 
+                /*alert('el nombre no puede tener mas de 9 caracteres');*/
+                errorNombre.innerText='El nombre tiene que ser mayor a 3 caracteres'; // muestra el mensaje de error
+                return false; /* evitara que el formulario se envie*/
+            }
+            if(apellido.length < 3){
+                errorApellido.innerHTML = 'El nombre tiene que ser mayor a 3 caracteres';
+                return false;
+            }
+
+            if(telefono && (!regTel.test(telefono)) ){
+                //alert('El teléfono debe comenzar con un número distinto de cero y tener una longitud de 10 dígitos.');
+                errorTel.innerHTML ='El teléfono debe comenzar con un número distinto de cero y tener una longitud de 10 dígitos.';
+            return false;
+            }
+            
+            return false;
+        }
+    </script>
+
 </body>
 
 </html>

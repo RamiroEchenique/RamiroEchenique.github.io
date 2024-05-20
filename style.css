@@ -12,7 +12,6 @@ h1,
 h2 {
     font-family: "fuentetitulo", Arial, Helvetica, sans-serif;
     text-align: center;
-
 }
 
 h3 {
@@ -166,14 +165,14 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 50px;
+    padding-bottom: 0%;
 }
 
 /* Estilo para cada producto */
 .Producto {
     flex: 0 0 23%; /* Asigna el 24% del ancho del contenedor a cada producto */
     box-sizing: border-box; /* Asegura que el padding y border estén incluidos en el ancho total */
-    margin-bottom: 20px; /* Espacio debajo de cada producto */
-    
+    margin-bottom: 20px; /* Espacio debajo de cada producto */ 
 }
 
 /* Estilo para las imágenes de los productos */
@@ -182,8 +181,14 @@ img {
     height: auto; /* Mantiene la proporción de las imágenes */
 }
 
+.Producto h2 {
+    margin-top: 0;
+    text-align: center;
+    size: 500%s;
+}
+
 .Producto h3 {
-    
+    margin-top: 0;
     text-align: center;
 }
 

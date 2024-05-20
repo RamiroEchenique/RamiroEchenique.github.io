@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'fuentetitulo';
+    src: url('fuentes/AmaticSC-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'fuentecuerpo';
+    src: url('fuentes/static/Lora-Regular.ttf') format('truetype');
+}
+
+h1,
+h2 {
+    font-family: "fuentetitulo", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h3 {
+    font-family: "fuentecuerpo";
+    font-size: 15px;
+    margin-left: 45px;
+    text-align: center;
+    padding: 0px;
+
+}
+
+.registro {
+    margin-right: 35px;
+}
+
+.registro:hover a {
+
+    color: #D38EB0;
+
+
+}
+
+body {
+    background-color: #D38EB0;
+    margin: 90;
+    font-family: "fuentecuerpo", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: #FFDDD9;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+
+}
+
+.logo img {
+
+    height: 80px;
+    margin-right: 15px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'fuentetitulo';
+}
+
+nav a {
+    font-weight: 800;
+    padding-right: 10px;
+    font-size: 35px;
+    margin-right: 20px;
+
+}
+
+nav a:hover {
+    color: #D38EB0;
+}
+
+@media (max-width:700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+}
+
+/*-----------------Estilo formulario-------------------*/
+/* Estilos generales del formulario */
+form {
+    font-family: "fuentecuerpo";
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 12px;
+    background-color: #f7f7f7;
+    /*border: 2px solid #0f0;*/
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    /* border: 1px solid #ccc; */
+    /*border-bottom: 1px solid #ccc;*/
+    /*border-radius: 5px;*/
+    border: none; /* Elimina el borde predeterminado */
+    border-bottom: 1px solid #ccc; /* Agrega una línea inferior */
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; 
+    /*border-bottom: 1px solid #ccc;*/
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el botón de envío */
+input[type="submit"] {
+    background-color: #5e6160;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px; /* Espacio adicional arriba del botón, si es necesario */
+    align-self: flex-end; /* Alinea el botón a la derecha */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+/*---------------Fin estilo formulario-----------------*/
