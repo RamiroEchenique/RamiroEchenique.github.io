@@ -49,43 +49,57 @@
 
         <label for="tel">Telefono</label>
         <input type="number" id="tel" name="tel">
-        <div id="erroTel" style="color: red;"></div>
+        <div id="errorTel" style="color: red;"></div>
 
         <label for="mensaje">Escribe un mensaje</label>
         <textarea id="textarea" name="mensaje" name="mensaje" rows="5"></textarea>
-        <div id="errorNombre" style="color: red;"></div>
+        <div id="errorMensaje" style="color: red;"></div>
 
         <input type="submit" value="enviar">
     </form>
 
     <script>
-        const regTel =/^[1-9][0-9]{9}$/; 
+        const regTel =/^[0-9][0-9]{9}$/; 
+        const regEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; 
 
         function validar(){
             let nombre = document.getElementById('nombre').value;
             let apellido = document.getElementById('apellido').value;
             let mail = document.getElementById('mail').value;
             let telefono = document.getElementById('tel').value; /*Obtiene el valor actual del elemento del DOM con el id ‘tel’, que es un campo de entrada (input). La propiedad .value da el contenido que el usuario ha ingresado en ese campo*/
+            let mensaje = document.getElementById('mensaje').value;
+
             const errorNombre = document.getElementById('errorNombre'); /*obtiene el elemento del DOM con el id ‘errorMensaje’, pero no su valor. errorElement se refiere al elemento en sí, no a su contenido*/
             const errorApellido = document.getElementById('errorApellido');
+            const errorEmail = document.getElementById('errorEmail');
+            const errorTel = document.getElementById('errorTel');
+            const errorMensaje = document.getElementById('errorMensaje');
 
             if(nombre.length < 3){ 
-                /*alert('el nombre no puede tener mas de 9 caracteres');*/
-                errorNombre.innerText='El nombre tiene que ser mayor a 3 caracteres'; // muestra el mensaje de error
+                errorNombre.innerHTML='El nombre tiene que ser mayor a 3 caracteres'; // muestra el mensaje de error
                 return false; /* evitara que el formulario se envie*/
             }
             if(apellido.length < 3){
-                errorApellido.innerText = 'El nombre tiene que ser mayor a 3 caracteres';
+                errorApellido.innerHTML = 'El apellido tiene que ser mayor a 3 caracteres';
                 return false;
             }
 
             if(telefono && (!regTel.test(telefono)) ){
-                //alert('El teléfono debe comenzar con un número distinto de cero y tener una longitud de 10 dígitos.');
                 errorTel.innerHTML ='El teléfono debe comenzar con un número distinto de cero y tener una longitud de 10 dígitos.';
             return false;
             }
-            
+
+            if (!regEmail.test(mail)){
+                errorEmail.innerHTML='El formato debe ser por ejemplo: pedro@gmail.com'
+            }
+
+            if (mensaje ===''){
+                errorMensaje.innerHTML='El mensaje no puede estar vacío';
             return false;
+            }
+
+            
+        return false;
         }
     </script>
 
