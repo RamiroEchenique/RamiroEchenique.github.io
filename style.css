@@ -12,7 +12,6 @@ h1,
 h2 {
     font-family: "fuentetitulo", Arial, Helvetica, sans-serif;
     text-align: center;
-
 }
 
 h3 {
@@ -158,6 +157,51 @@ img {
     right: 2%;
     top: calc(50% - 10%)
 }
+
+/*-------------Productos--------------------------------------------------------------*/
+/* Estilo para el contenedor principal */
+.Productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-bottom: 0%;
+}
+
+/* Estilo para cada producto */
+.Producto {
+    flex: 0 0 23%; /* Asigna el 24% del ancho del contenedor a cada producto */
+    box-sizing: border-box; /* Asegura que el padding y border estén incluidos en el ancho total */
+    margin-bottom: 20px; /* Espacio debajo de cada producto */ 
+}
+
+/* Estilo para las imágenes de los productos */
+.Producto img {
+    width: 80%; /* Hace que las imágenes ocupen todo el ancho del contenedor .Producto */
+    height: auto; /* Mantiene la proporción de las imágenes */
+}
+
+.Producto h2 {
+    margin-top: 0;
+    text-align: center;
+    size: 500%s;
+}
+
+.Producto h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.Producto a.boton {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+/*---------------------------------------------------------------------------*/
 
 /* Estilo para el Formulario*/
 .containerF {
