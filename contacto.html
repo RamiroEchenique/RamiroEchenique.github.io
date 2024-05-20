@@ -66,15 +66,16 @@
             let apellido = document.getElementById('apellido').value;
             let mail = document.getElementById('mail').value;
             let telefono = document.getElementById('tel').value; /*Obtiene el valor actual del elemento del DOM con el id ‘tel’, que es un campo de entrada (input). La propiedad .value da el contenido que el usuario ha ingresado en ese campo*/
-            const errorElement = document.getElementById('errorMensaje'); /*obtiene el elemento del DOM con el id ‘errorMensaje’, pero no su valor. errorElement se refiere al elemento en sí, no a su contenido*/
+            const errorNombre = document.getElementById('errorNombre'); /*obtiene el elemento del DOM con el id ‘errorMensaje’, pero no su valor. errorElement se refiere al elemento en sí, no a su contenido*/
+            const errorApellido = document.getElementById('errorApellido');
 
-            if(nombre.length > 3){ 
+            if(nombre.length < 3){ 
                 /*alert('el nombre no puede tener mas de 9 caracteres');*/
                 errorNombre.innerText='El nombre tiene que ser mayor a 3 caracteres'; // muestra el mensaje de error
                 return false; /* evitara que el formulario se envie*/
             }
             if(apellido.length < 3){
-                errorApellido.innerHTML = 'El nombre tiene que ser mayor a 3 caracteres';
+                errorApellido.innerText = 'El nombre tiene que ser mayor a 3 caracteres';
                 return false;
             }
 
