@@ -181,9 +181,10 @@ img {
 
 .form-content h1 {
     font-size: 30px;
-    margin-bottom: 60px;
+    margin: 10px ;
     position: relative;
     color: black;
+    padding-bottom: 30px;
 }
 
 /* Crear un elemento*/
@@ -198,6 +199,7 @@ img {
     bottom: -12px;
     left: 50%;
     transform: translateX(-50%);
+    margin: 10px;
 }
 
 .input-field {
