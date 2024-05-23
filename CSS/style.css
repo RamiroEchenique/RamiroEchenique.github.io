@@ -1,4 +1,4 @@
-@import "productos.css";  
+@import "productos.css";
 
 @font-face {
     font-family: 'fuentetitulo';
@@ -9,6 +9,8 @@
     font-family: 'fuentecuerpo';
     src: url('fuentes/static/Lora-Regular.ttf') format('truetype');
 }
+
+/*------------- Estilo Encabezado ------------ */
 
 h1,
 h2 {
@@ -31,13 +33,13 @@ h3 {
 
 .registro:hover a {
 
-    color: #D38EB0;
+    color: #da95b7;
 
 
 }
 
 body {
-    background-color: #D38EB0;
+    background-color: #e2afc8;
     margin: 90;
     font-family: "fuentecuerpo", Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -48,7 +50,7 @@ header {
     display: flex;
     justify-content: space-between;
     min-height: 70px;
-    background-color: #FFDDD9;
+    background-color: #f8e6f8;
     align-items: center;
     padding: 15px;
 }
@@ -94,20 +96,7 @@ nav a:hover {
         padding: 10px 0px;
     }
 }
-
-/*- Hacer que se ajuste al tamaño de la pantalla
-
-/* estilo para el carrousel*/
-/**{
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-family: Arial, Helvetica, sans-serif;
-}*/
+/*------------- Estilo carrousel ------------ */
 
 img {
     width: auto;
@@ -161,51 +150,83 @@ img {
 }
 
 /*-------------Productos--------------------------------------------------------------*/
+
+
 /* Estilo para el contenedor principal */
 .Productos {
     display: flex;
+    background-color: #fff;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 50px;
     padding-bottom: 0%;
+    border-radius: 25px;
 }
 
 /* Estilo para cada producto */
 .Producto {
-    flex: 0 0 23%; /* Asigna el 24% del ancho del contenedor a cada producto */
-    box-sizing: border-box; /* Asegura que el padding y border estén incluidos en el ancho total */
-    margin-bottom: 20px; /* Espacio debajo de cada producto */ 
+    margin-top: 15px;
+    margin-right: 10px;
+    flex: 0 0 23%;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 /* Estilo para las imágenes de los productos */
 .Producto img {
-    width: 80%; /* Hace que las imágenes ocupen todo el ancho del contenedor .Producto */
-    height: auto; /* Mantiene la proporción de las imágenes */
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    width: 90%;
+    height: auto;
+
 }
 
 .Producto h2 {
-    margin-top: 0;
+    /* estilo precio */
+    margin-top: 10px;
     text-align: center;
+    justify-content: center;
     size: 500%s;
 }
 
 .Producto h3 {
-    margin-top: 0;
+    /* estilo titulo */
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    margin-right: 20%;
     text-align: center;
+    justify-content: left;
 }
 
 .Producto a.boton {
+    /* boton ver mas */
     display: inline-block;
-    padding: 8px 12px;
+    padding: 10px 12px;
     background-color: #333;
-    color: #fff;
+    color: #dacfe0ee;
     text-decoration: none;
+    text-align: center;
     border: none;
     cursor: pointer;
+    margin-top: 2px;
 }
-/*---------------------------------------------------------------------------*/
+.Producto a.boton:hover {
+    background-color: #a0396c;
+    ;
+    color: #ffff; 
+    transform: scale(1.05); 
+    transition: all 0.3s ease; 
+}
 
-/* Estilo para el Formulario*/
+/*--------------------- Estilo para el Formulario Registro ---------------------*/
+
 .containerF {
     align-items: center;
     justify-content: center;
@@ -227,13 +248,13 @@ img {
 
 .form-content h1 {
     font-size: 30px;
-    margin: 10px ;
+    margin: 10px;
     position: relative;
     color: black;
     padding-bottom: 30px;
 }
 
-/* Crear un elemento*/
+/* Crear linea */
 
 .form-content h1::after {
     content: " ";
@@ -314,7 +335,6 @@ form p a {
 }
 
 .btn-field button.disable {
-background-color: #bb809d;
-color: rgba(82, 80, 80, 0.74);
+    background-color: #bb809d;
+    color: rgba(82, 80, 80, 0.74);
 }
-
