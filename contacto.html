@@ -7,7 +7,8 @@
     <title> Dayra </title>
     <link rel="icon" href="imagenes/logo-pestaña.png" sizes="16z16" type="image/png">
     <link rel="stylesheet" href="CSS/estilo-formulario.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    
+    <!--  <link rel="stylesheet" href="CSS/style.css"> -->
 </head>
 
 <body>
@@ -54,8 +55,10 @@
         <div id="errorAreaTexto" style="color: red;"></div>
 
         <input type="submit" value="enviar">
+        <div id="datosEnviados"></div>
     </form>
-
+    
+    
     <script>
         const regTel =/^[0-9][0-9]{10}$/; 
         const regEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; 
@@ -99,7 +102,40 @@
             }
 
             if(tel && nombre && apellido && mail && telefono){
-                alert(`${nombre}, nos comunicaremos contigo a la brevedad`)
+                //alert(`${nombre}, nos comunicaremos contigo a la brevedad`)
+                // Limpiar contenedor de datos anteriores
+                const datosEnviados = document.getElementById('datosEnviados');
+                datosEnviados.innerHTML = '';
+                // Crear elementos HTML para cada dato
+                const nombreElement = document.createElement('p');
+                const apellidoElement = document.createElement('p');
+                const emailElement = document.createElement('p');
+                const telElement = document.createElement('p');
+
+                //creacion del mensaje
+
+                nombreElement.textContent = `Hola ${nombre} ${apellido} nos comunicaremos a la brevedad a los siguientes medios que nos proporcionaste: `;
+                datosEnviados.appendChild(nombreElement);
+
+                emailElement.textContent = `mail: ${mail}`;
+                datosEnviados.appendChild(emailElement);
+
+                telElement.textContent = `telefono: ${telefono}`;
+                datosEnviados.appendChild(telElement);
+                // Crear elementos HTML para cada dato
+                //const nombreElement = document.createElement('p');
+                //nombreElement.textContent = `Nombre: ${nombre}`;
+                //datosEnviados.appendChild(nombreElement);
+
+                //const apellidoElement = document.createElement('p');
+                //apellidoElement.textContent = `Apellido: ${apellido}`;
+                //datosEnviados.appendChild(apellidoElement);
+
+                
+
+                // Mostrar el contenedor con los datos
+                datosEnviados.style.display = 'block';
+
             }
             //Limpieza de campos y errores
             document.getElementById('formulario').reset();

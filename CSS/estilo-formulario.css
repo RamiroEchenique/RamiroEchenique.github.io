@@ -99,7 +99,7 @@ form {
     font-family: "fuentecuerpo";
     max-width: 400px;
     margin: 0 auto;
-    padding: 25px;
+    padding: 10px 25px;
     background-color: #ffffff;
     border: 2px solid rgb(68, 8, 70);
     border-radius: 5px;
@@ -148,4 +148,18 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #491558;
 }
+/*     estilo para el mensaje      */
+
+#datosEnviados {
+    font-family: "fuentecuerpo";
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0px 12px;
+    background-color: #ffffff;
+    /*border: 2px solid rgb(68, 8, 70);*/
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
 /*---------------Fin estilo formulario-----------------*/
