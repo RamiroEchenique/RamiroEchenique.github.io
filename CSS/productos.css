@@ -1,35 +1,42 @@
 .container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 
 .prod {
-    margin: 15px;
+  margin: 15px;
 }
+
 .prod img {
-   width: 300px;
-   height: 350px;
-   justify-content: space-between;
-  }
-
-  .prod p {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-  }
-
-  .prod a{
-    font-size: 50px;
-    font-weight: bold;
-    font-family: "fuentecuerpo";
-  }
-
-  .prod a img, .prod a p {
-    margin: 0 auto;
+  width: 300px;
+  height: 350px;
+  justify-content: space-between;
 }
-.prod a:hover{
-  color: rgb(80, 8, 70);
+
+.prod p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
 }
+
+.prod a {
+  font-size: 65px;
+  font-weight: bold;
+  font-family: "fuentecuerpo";
+}
+
+.prod a img,
+.prod a p {
+  margin: 0 auto;
+}
+
+.prod a:hover {
+  color: rgb(122, 4, 113);
+}
+
+/*---------------------- estilo productos seleccionados ---------------------- */
+
+
