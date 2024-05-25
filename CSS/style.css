@@ -1,6 +1,10 @@
 @import "productos.css";
+<<<<<<< Updated upstream
 @import url(estilo-formulario.css);
 
+=======
+@import "EstiloLinksProductos.css";
+>>>>>>> Stashed changes
 
 @font-face {
     font-family: 'fuentetitulo';
@@ -46,7 +50,7 @@ body {
     background-color: #e2afc8;
     margin: 90;
     font-family: "fuentecuerpo", Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+   
 
 }
 
@@ -102,6 +106,7 @@ nav a:hover {
         padding: 10px 0px;
     }
 }
+
 /*------------- Estilo carrousel ------------ */
 
 img {
@@ -223,12 +228,13 @@ img {
     cursor: pointer;
     margin-top: 2px;
 }
+
 .Producto a.boton:hover {
     background-color: #a0396c;
     ;
-    color: #ffff; 
-    transform: scale(1.05); 
-    transition: all 0.3s ease; 
+    color: #ffff;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
 
 /*--------------------- Estilo para el Formulario Registro ---------------------*/
@@ -347,12 +353,18 @@ form p a {
 
 /*------------- Estilo para la Pagina Nosotros ------------- */
 
-.contenedor-flex{
+.contenedor-flex {
     width: 100%;
-    background-color: #f8e6f8;
-
+   border-style: solid;
+   border-color: #f8e6f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    padding: 10px 10px;
 }
 
+<<<<<<< Updated upstream
 /*------------- Estilo para el pie de página ------------- */
 
 footer{
@@ -380,3 +392,35 @@ footer img{
     vertical-align: middle;
 }
 
+=======
+.img-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.img {
+    text-align: center;
+}
+
+.imagen1,
+.imagen3 {
+    width: 60%;
+    height: auto;
+}
+
+.img imagen3{
+   flex-grow: 2;
+}
+
+.imagen1 img,
+.imagen3 img{
+    width: 60%;
+    height: auto;
+}
+
+.img-container .img p,
+.imagen2-container p {
+    padding: 10px;
+}
+>>>>>>> Stashed changes
