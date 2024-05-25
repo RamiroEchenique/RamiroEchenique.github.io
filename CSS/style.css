@@ -1,4 +1,6 @@
 @import "productos.css";
+@import url(estilo-formulario.css);
+
 
 @font-face {
     font-family: 'fuentetitulo';
@@ -16,6 +18,8 @@ h1,
 h2 {
     font-family: "fuentetitulo", Arial, Helvetica, sans-serif;
     text-align: center;
+    /*padding-bottom: 0;
+    padding-top: 0;*/
 }
 
 h3 {
@@ -49,16 +53,18 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    min-height: 70px;
+    min-height: 10px;
     background-color: #f8e6f8;
     align-items: center;
-    padding: 15px;
+    /*padding: 15px;*/
 }
 
 .logo {
     display: flex;
     align-items: center;
     font-size: 35px;
+    /*padding-top: 0;
+    padding-bottom: 0;*/
 
 }
 
@@ -345,5 +351,32 @@ form p a {
     width: 100%;
     background-color: #f8e6f8;
 
+}
+
+/*------------- Estilo para el pie de página ------------- */
+
+footer{
+    background-color: #333333;
+    color: #a7a7a7;
+    text-align: center;
+    font-family: "fuentecuerpo";
+    padding: 1px;
+    border-radius: 10px;
+    
+}
+
+footer a{
+    color: #a7a7a7;
+    font-family: "fuentecuerpo";
+    margin: 0 0px;
+}
+
+footer div p{
+    margin-bottom: 0;
+}
+
+footer img{
+    width: 18px;
+    vertical-align: middle;
 }
 
