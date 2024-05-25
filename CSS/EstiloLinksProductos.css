@@ -1,0 +1,32 @@
+/*---------------------- estilo productos seleccionados ---------------------- */
+
+
+.contenedor-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(3, 3, 3);
+    margin-right: 10px;
+    margin-top: 15px;
+    flex-direction: column;
+
+}
+
+.contenedor-links div{
+    background-color: blue;
+    width: 50%;
+}
+
+.contenedor-links img {
+    width: 460px;
+    height: 400px;
+  }
+
+.img {
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+
