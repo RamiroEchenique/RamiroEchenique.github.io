@@ -44,14 +44,20 @@ h3 {
 
 }
 
+/* ---------- Mariposas y flores de fondo ----------   */
+
+/* Flor de la Derecha */
 body {
-    background-color: #e2afc8;
+    background-color: rgba(209, 179, 235);
     margin: 90;
     font-family: "fuentecuerpo", Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 
 }
 
+
+
+/*------------------------ ENCABEZADO ------------------------  */
 header {
     display: flex;
     justify-content: space-between;
@@ -248,8 +254,9 @@ img {
 
 .form-content {
     width: 100%;
-    max-width: 450px;
-    background-color: #ffddd9c9;
+    height: 450;
+    max-width: 400px;
+    background-color: #9340c4c9;
     padding: 50px 60px 70px;
     text-align: center;
     border-radius: 30px;
@@ -258,9 +265,10 @@ img {
 
 .form-content h1 {
     font-size: 30px;
-    margin: 10px;
+    bottom: 60%;
+    margin: 5px;
     position: relative;
-    color: black;
+    color: rgb(255, 253, 253);
     padding-bottom: 30px;
 }
 
@@ -274,15 +282,15 @@ img {
     background-color: rgb(100, 38, 141);
     position: absolute;
     bottom: -12px;
-    left: 50%;
+    left: 43%;
     transform: translateX(-50%);
-    margin: 10px;
+    margin: 25px;
 }
 
 .input-field {
 
     margin: 15px 0px;
-    background-color: #fff;
+    background-color: #f8f3f3;
     display: flex;
     border-radius: 3px;
     align-items: center;
@@ -296,11 +304,11 @@ input {
     border: 0;
     outline: none;
     padding: 10px 15px;
-    color: black;
+    color: rgb(8, 8, 8);
 }
 
 input::placeholder {
-    color: black;
+    color: rgb(19, 16, 16);
 }
 
 .input-field i {
@@ -377,7 +385,7 @@ form p a {
     flex-direction: column;
     align-items: center;
     width: 50%;
-    
+
 }
 
 .img-container .imagen3 {
@@ -411,6 +419,7 @@ form p a {
     padding: top 0;
     font-size: 20px;
 }
+
 .img-container .imagen3 h2 {
     font-size: 35px;
 }
@@ -449,4 +458,3 @@ footer img {
     width: 18px;
     vertical-align: middle;
 }
-
