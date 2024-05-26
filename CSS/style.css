@@ -450,35 +450,3 @@ footer img {
     vertical-align: middle;
 }
 
-/*=======
-.img-container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.img {
-    text-align: center;
-}
-
-.imagen1,
-.imagen3 {
-    width: 60%;
-    height: auto;
-}
-
-.img imagen3{
-   flex-grow: 2;
-}
-
-.imagen1 img,
-.imagen3 img{
-    width: 60%;
-    height: auto;
-}
-
-.img-container .img p,
-.imagen2-container p {
-    padding: 10px;
-}
->>>>>>> Stashed changes*/
