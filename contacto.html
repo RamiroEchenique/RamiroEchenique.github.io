@@ -54,7 +54,18 @@
 
         <input type="submit" value="enviar">
         <div id="datosEnviados"></div>
-    </form>
+    </form><br><br>
+
+    <footer>
+        <div>
+            <p>Creado por:</p>
+            <a href="https://www.linkedin.com/in/ramiro--echenique/"> Ramiro Echenique <img src="imagenes/linkedin.png" alt="LinkedIn de Ramiro Echenique"> </a>
+            <a href="https://github.com/RamiroEchenique"><img src="imagenes/github.png" alt="GitHub de Ramiro Echenique"></a><br>
+            <a href="#"> Micaela Gomez <img src="imagenes/linkedin.png" alt="LinkedIn de Micaela Gomez"></a>
+            <a href="#"><img src="imagenes/github.png" alt="GitHub de Micaela Gomez"></a><br>
+
+        </div>
+        <p>&copy; 2024 Dayra Accesorios - Todos los derechos reservados.</p>
     
     
     <script>
@@ -109,18 +120,22 @@
                 const apellidoElement = document.createElement('p');
                 const emailElement = document.createElement('p');
                 const telElement = document.createElement('p');
+                const mensajeElement = document.createElement('p');
 
                 //creacion del mensaje
 
                 nombreElement.textContent = `Hola ${nombre} ${apellido} nos comunicaremos a la brevedad a los siguientes medios que nos proporcionaste: `;
                 datosEnviados.appendChild(nombreElement);
 
-                emailElement.textContent = `mail: ${mail}`;
+                emailElement.textContent = `Email: ${mail}`;
                 datosEnviados.appendChild(emailElement);
 
-                telElement.textContent = `telefono: ${telefono}`;
+                telElement.textContent = `Telefono: ${telefono}`;
                 datosEnviados.appendChild(telElement);
                 
+                mensajeElement.textContent = `Mensaje: ${areaTexto}`;
+                datosEnviados.appendChild(mensajeElement);
+
                 // Mostrar el contenedor con los datos
                 datosEnviados.style.display = 'block';
 

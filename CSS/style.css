@@ -1,10 +1,8 @@
 @import "productos.css";
-<<<<<<< Updated upstream
 @import url(estilo-formulario.css);
-
-=======
 @import "EstiloLinksProductos.css";
->>>>>>> Stashed changes
+/*@import url(EstiloLinksProductos.css);*/
+
 
 @font-face {
     font-family: 'fuentetitulo';
@@ -364,7 +362,7 @@ form p a {
     padding: 10px 10px;
 }
 
-<<<<<<< Updated upstream
+/*<<<<<<< Updated upstream*/
 /*------------- Estilo para el pie de página ------------- */
 
 footer{
@@ -392,7 +390,7 @@ footer img{
     vertical-align: middle;
 }
 
-=======
+/*=======
 .img-container {
     display: flex;
     width: 100%;
@@ -423,4 +421,4 @@ footer img{
 .imagen2-container p {
     padding: 10px;
 }
->>>>>>> Stashed changes
+>>>>>>> Stashed changes*/
