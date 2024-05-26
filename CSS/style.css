@@ -33,16 +33,6 @@ h3 {
 
 }
 
-.registro {
-    margin-right: 35px;
-}
-
-.registro:hover a {
-
-    color: #da95b7;
-
-
-}
 
 /* ---------- Mariposas y flores de fondo ----------   */
 
@@ -64,7 +54,8 @@ header {
     min-height: 10px;
     background-color: #f8e6f8;
     align-items: center;
-    /*padding: 15px;*/
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .logo {
@@ -80,6 +71,25 @@ header {
 
     height: 80px;
     margin-right: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.nombre-empresa {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.registro {
+    margin-right: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.registro:hover a {
+
+    color: #da95b7;
+
 
 }
 
@@ -451,6 +461,7 @@ footer a {
 }
 
 footer div p {
+    margin-top: 5;
     margin-bottom: 0;
 }
 
