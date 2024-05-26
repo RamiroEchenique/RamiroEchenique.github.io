@@ -93,8 +93,8 @@ nav a:hover {
     }
 }
 
-/*-----------------Estilo formulario-------------------*/
-/* Estilos generales del formulario */
+/*----------------- Estilo formulario de Contacto -------------------*/
+
 form {
     font-family: "fuentecuerpo";
     max-width: 400px;
@@ -105,6 +105,22 @@ form {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+}
+
+.texto{
+    margin: 15px;
+    border: 2px solid #ffffff;
+   
+}
+.texto h1 {
+    font-size: 35px;
+    font-family: "fuentecuerpo";
+    font-style: italic;
+    
+}
+.texto h2 {
+    font-size: 18px;
+    font-family: "fuentecuerpo";
 }
 
 
