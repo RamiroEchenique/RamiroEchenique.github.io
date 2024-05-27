@@ -42,13 +42,14 @@ body {
     margin: 90;
     font-family: "fuentecuerpo", Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+
 }
+
 
 
 /*------------------------ ENCABEZADO ------------------------  */
 header {
     display: flex;
-    /*width: 100%;*/
     justify-content: space-between;
     min-height: 10px;
     background-color: #f8e6f8;
@@ -104,7 +105,7 @@ nav a {
     font-weight: 800;
     padding-right: 10px;
     font-size: 35px;
-    margin-right: 25px;
+    margin-right: 20px;
 
 }
 
@@ -252,6 +253,14 @@ img {
     transition: all 0.3s ease;
 }
 
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-bottom: 0%;
+    border-radius: 25px;
+}
 /*--------------------- Estilo para el Formulario Registro ---------------------*/
 
 .containerF {
@@ -429,7 +438,6 @@ form p a {
     margin-top: 0%;
     padding: top 0;
     font-size: 20px;
-    margin: 10px;
 }
 
 .img-container .imagen3 h2 {
@@ -439,7 +447,7 @@ form p a {
 .imagen2 p {
     text-align: justify;
     margin: 15px;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 /*<<<<<<< Updated upstream*/
