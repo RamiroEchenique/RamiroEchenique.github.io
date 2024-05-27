@@ -178,7 +178,7 @@ input[type="submit"]:hover {
     flex-direction: column;
     position: absolute;
     top: 450px; 
-    right: 15px;
+    right: 10px;
 }
 
 /*---------------Fin estilo formulario-----------------*/
