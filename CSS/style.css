@@ -42,9 +42,7 @@ body {
     margin: 90;
     font-family: "fuentecuerpo", Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-
 }
-
 
 
 /*------------------------ ENCABEZADO ------------------------  */
@@ -431,6 +429,7 @@ form p a {
     margin-top: 0%;
     padding: top 0;
     font-size: 20px;
+    margin: 10px;
 }
 
 .img-container .imagen3 h2 {
@@ -440,7 +439,7 @@ form p a {
 .imagen2 p {
     text-align: justify;
     margin: 15px;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 /*<<<<<<< Updated upstream*/
