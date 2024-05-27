@@ -176,6 +176,9 @@ input[type="submit"]:hover {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 450px; 
+    right: 15px;
 }
 
 /*---------------Fin estilo formulario-----------------*/
