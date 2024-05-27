@@ -15,13 +15,13 @@
             const errorTel = document.getElementById('errorTel');
             const errorAreaTexto = document.getElementById('errorAreaTexto');
 
-            if(nombre.length < 3){ 
-                errorNombre.innerHTML='El nombre tiene que ser mayor a 3 caracteres'; // muestra el mensaje de error
+            if(nombre.length < 3 || nombre.length>10){ 
+                errorNombre.innerHTML='El nombre tiene que ser mayor a 3 caracteres y menor a 10 caracteres'; // muestra el mensaje de error
                 return false; /* evitara que el formulario se envie*/
             }
 
-            if(apellido.length < 3){
-                errorApellido.innerHTML = 'El apellido tiene que ser mayor a 3 caracteres';
+            if(apellido.length < 3|| apellido.length>10){
+                errorApellido.innerHTML = 'El apellido tiene que ser mayor a 3 caracteres y menor a 10 caracteres';
                 return false;
             }
 
